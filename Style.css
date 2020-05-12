@@ -1,0 +1,156 @@
+/* Header */
+header { /* Header Background */
+  background-position: center;
+  background-size: contain;
+}
+
+.warning { /* Warning text */
+  color: red;
+}
+
+.topp { /* Warning text */
+  color: blue;
+}
+
+.base { /* Warning text */
+  color: black;
+}
+
+.logo { /* Logo Text */
+  color: white;
+  background-color: rgb(76, 142, 195);
+  display: block;
+  height: auto;
+}
+
+/* Makes things mobile friendly */
+.img-responsive
+{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0;
+  overflow-x: hidden;
+}
+
+/* On smaller screens, where width is less than 600px, the content is adapted */
+@media screen and (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+  .sidenav {
+	  width: 100%
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+/* The background */
+body {
+  background-color: rgb(10, 45, 93);
+  background-size:100%;
+}
+
+/* The Body Maintainence */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+@media screen and (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  color: grey;
+  background-color: black;
+  padding: 10px;
+}
+
+/* The Sidebar Menu */
+.sidenav { /* The Sidebar itself */
+  height: 100%;
+  width: auto;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(10, 45, 93);
+  overflow-x: hidden;
+}
+.sidenav a { /* The Actual Links in the Sidebar */
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  background-color: rgb(10, 45, 93);
+  display: block;
+}
+.sidenav a:hover { /* When the Links are Hovered Over */
+  color: blue;
+  background-color: teal;
+}
+@media screen and (max-width: 600px) {
+  .sidenav {
+	  width: 100%
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+/* Footer */
+footer { /* The Footer Itself */
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+  color: gold;
+}
+.column { /* Footer Columns */
+  float: left;
+  width: 33.33%;
+}
+.row:after { /* Footer Rows */
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+ #confirm {
+	display: none;
+	color: White;
+	background-color: Indigo;
+	border: 1px solid Black;
+	position: fixed;
+	width: 250px;
+	left: 50%;
+	margin-left: -100px;
+	padding: 6px 8px 8px;
+	box-sizing: border-box;
+	text-align: center;
+ }
+ #confirm button {
+	background-color: Navy;
+	display: inline-block;
+	border-radius: 5px;
+	border: 1px solid Black;
+	padding: 5px;
+	text-align: center;
+	width: 80px;
+	cursor: pointer;
+ }
+ #confirm .message {
+	text-align: left;
+ }
